@@ -41,6 +41,10 @@
         <div class="card-body">
           <ul>
             <li>{{ post.data.courseOutcomes }}</li>
+
+            {{
+              content | safe
+            }}
           </ul>
         </div>
       </div>
