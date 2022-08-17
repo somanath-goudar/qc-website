@@ -11,6 +11,7 @@
   <body>
     {%- for post in collections.post -%}
     <div class="header">
+      f
       <h2>{{ post.data.course }}</h2>
     </div>
 
@@ -51,10 +52,10 @@
 
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
+        window.netlifyIdentity.on("init", (user) => {
           if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/'
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/"
             })
           }
         })
